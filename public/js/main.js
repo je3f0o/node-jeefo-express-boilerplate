@@ -16,11 +16,11 @@ require.config({
 	baseUrl : base_url + "/js",
 	paths   : {
 		// Configure alias to full paths
-		"angular"               : "../bower_components/angular/angular.min",
-		"angularAnimate"        : "../bower_components/angular-animate/angular-animate.min",
-		"angularMessages"       : "../bower_components/angular-messages/angular-messages.min",
-		"angularResource"       : "../bower_components/angular-resource/angular-resource.min",
-		"angularUiRounter"      : "../bower_components/angular-ui-router/release/angular-ui-router.min",
+		"angular"               : "/bower_components/angular/angular.min",
+		"angularAnimate"        : "/bower_components/angular-animate/angular-animate.min",
+		"angularMessages"       : "/bower_components/angular-messages/angular-messages.min",
+		"angularResource"       : "/bower_components/angular-resource/angular-resource.min",
+		"angularUiRounter"      : "/bower_components/angular-ui-router/release/angular-ui-router.min",
 	},
 
 	shim : {
