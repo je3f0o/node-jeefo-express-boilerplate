@@ -1,0 +1,26 @@
+{
+  "name": "jeefo-express-boilerplate",
+  "private": true,
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:main:sass": "bash build/watch_main_sass.sh",
+    "clean": "bash build/clear.sh",
+    "serve": "nodemon -w server/**/*.js server",
+    "dev": "parallelshell -v 'npm run watch:main:sass' 'npm run serve'",
+    "stop": "pkill node",
+    "start": "bash build/start.sh &",
+    "restart": "pkill node && npm run start"
+  },
+  "dependencies": {
+    "async": "^1.4.2",
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "jeefo-sql": "0.0.39",
+    "response-time": "^2.3.1"
+  },
+  "devDependencies": {
+    "morgan": "^1.6.1"
+  }
+}
