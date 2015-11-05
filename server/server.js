@@ -2,7 +2,7 @@
 * File Name  : server.js
 * Purpose    :
 * Created at : 2015-09-29
-* Updated at : 2015-10-14
+* Updated at : 2015-11-05
 * Author     : jeefo
 _._._._._._._._._._._._._._._._._._._._._.*/
 
@@ -37,7 +37,7 @@ app.use(express.static(config.public_dir));
 
 // My own private middleware modules
 // app.use(require("response_ex"));
-app.use(require("paginate"));
+app.use(require("jeefo-express-paginator"));
 
 // Define routes
 require("./routes")(app);
