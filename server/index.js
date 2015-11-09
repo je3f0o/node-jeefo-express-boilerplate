@@ -5,6 +5,6 @@ var server = require("./server"),
 
 server.listen(port, function () {
 	if (process.env.NODE_ENV !== "production") {
-		require("my_browser_sync")(port);
+		require("my-browser-sync")(port);
 	}
 });
